@@ -2,15 +2,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        int x = 100;
-//        int y = 14;
-//        int z = 123;
-//        int sum = z + y;
-//        System.out.println(sum);
-//        System.out.println(x + y);
-//        System.out.println("Hello, world!");
-        Scanner scanner = new Scanner(System.in);
-        String name = scanner.nextLine();
-        System.out.println("Hello, " + name + "!");
+        Scanner input = new Scanner(System.in);
+        System.out.println("Введите первое число: ");
+        int x = input.nextInt();
+        System.out.println("Введите второе число");
+        int y = input.nextInt();
+        if (x > y) {
+            System.out.println("Число" + " " + x + " " + "больше числа" + " " + y);
+        } else if (x < y) {
+            System.out.println("Число" + " " + y + " " + "больше числа" + " " + x);
+
+        } else {
+            System.out.println("Число" + " " + y + " " + "равно числу" + " " + x);
+        }
     }
 }
